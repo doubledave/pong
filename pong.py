@@ -6,8 +6,15 @@ import os
 import time
 import datetime
 from time import sleep
-
+import psutil
+from fmt_num import fmt_num
 import pygame
+
+print("Total memory:     "+ fmt_num(psutil.virtual_memory().total))
+print("Used memory:      "+ fmt_num(psutil.virtual_memory().used))
+print("Available memory: "+ fmt_num(psutil.virtual_memory().available))
+print("Free memory:      "+ fmt_num(psutil.virtual_memory().free))
+print()
 
 win = turtle.Screen()
 win.title('Pong by Inspyre')

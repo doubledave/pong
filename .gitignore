@@ -2,3 +2,4 @@
 .idea/
 .idea/inspectionProfiles/
 *.key
+__pycache__/
